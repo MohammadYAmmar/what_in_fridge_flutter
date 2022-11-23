@@ -1,6 +1,6 @@
 # What is in the fridge? 🍽️
 
-![](https://github.com/MohammadYAmmar/what_in_fridge_flutter/blob/master/Explanation/fridge_logo.png)
+![](https://github.com/MohammadYAmmar/what_in_fridge_flutter/blob/master/Explanation/fridge_logo.png width=100)
 
 Flutter project using Riverpod for state management.
 The idea of the application was to solve a problem I faced after going to work in an area without my family. Its purpose is to see what's in the fridge and when it's expected to expire.
