@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:what_in_fridge/views/screens/crud/list.dart';
+import 'package:what_in_fridge/views/widgets/calendar.dart';
 
 
 void main() {
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const IngredientList(),
+      home: const TableTest(),
+      // home: const IngredientList(),
     );
   }
 
