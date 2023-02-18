@@ -23,8 +23,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const TableTest(),
-      // home: const IngredientList(),
+      //todo 18-2-2023
+      // home: const TableTest(),
+      home: const IngredientList(),
     );
   }
 
