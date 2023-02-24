@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:what_in_fridge/test_xampp.dart';
 import 'package:what_in_fridge/views/screens/crud/list.dart';
 import 'package:what_in_fridge/views/widgets/calendar.dart';
 
 
 void main() {
+
+  //todo test db
+  Mysql.getConnection();
+
   runApp(
     // TODO: add provider scope above your app
     const ProviderScope(child: MyApp()),
