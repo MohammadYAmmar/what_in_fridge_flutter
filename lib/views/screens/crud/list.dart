@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:sql_conn/sql_conn.dart';
 import 'package:what_in_fridge/controllers/ingredient_riverpod.dart';
 import 'package:what_in_fridge/models/ingredient.dart';
 import 'package:what_in_fridge/views/screens/crud/create.dart';
@@ -134,7 +135,26 @@ class IngredientList extends ConsumerWidget {
             ),
           ),
           floatingActionButton: FloatingActionButton(
-            onPressed: () {
+            onPressed: () async {
+              //todo sql
+              await SqlConn.connect(
+                // ip: "192.168.167.176",
+                // port: "1433",
+                // databaseName: "MyDatabase",
+                // username: "admin123",
+                // password: "Pass@123"
+                  ip: "DESKTOP-IBIIF13\SQLEXPRESS",
+                  port: "1433",
+                  databaseName: "AndroidApp",
+                  username: "",
+                  password: ""
+              );
+              var res = await SqlConn.readData("SELECT * FROM Table_1");
+              print("hello");
+              print(res.toString());
+
+
+              //
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) => CreateIngredient()));
             },
